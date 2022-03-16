@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/svgs/cloudtravel-logo.svg"
+      type="image/x-icon"
+    />
+    <title>Cloud Travel</title>
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <a href="" class="header__link">
+              <img
+                src="./assets/svgs/cloudtravel-logo.svg"
+                alt="Cloud Travel logo"
+                class="header__image"
+              />
+            </a>
+          </div>
+          <div class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <!-- English        USD        My Account     Log out -->
+                <a href="" class="nav__link nav__link--flex" name="language">
+                  <span class="text"> English </span>
+                  <span class="icon">
+                    <svg
+                      width="8"
+                      height="5"
+                      viewBox="0 0 8 5"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0 0L4 5L8 0H0Z" fill="black" />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link nav__link--flex" name="currency">
+                  <span class="text"> USD </span>
+                  <span class="icon">
+                    <svg
+                      width="8"
+                      height="5"
+                      viewBox="0 0 8 5"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0 0L4 5L8 0H0Z" fill="black" />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link" name="My Account">
+                  <span class="text"> My Account </span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link" name="Log out">
+                  <span class="text"> Log out </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="section-search-bar">
+      <div class="container">
+        <div class="search-bar">
+          <form action="" class="search-bar__form">
+            <div class="search-bar__group search-bar__group--lg">
+              <div class="search-bar__wrapper">
+                <div class="search-bar__icon">
+                  <svg
+                    width="16"
+                    height="15"
+                    viewBox="0 0 16 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.73185 12.8287C8.1551 12.8284 9.53733 12.352 10.6585 11.4753L14.1833 15L15.3171 13.8663L11.7923 10.3416C12.6695 9.22038 13.1462 7.83791 13.1466 6.41437C13.1466 2.87765 10.2688 0 6.73185 0C3.19494 0 0.317139 2.87765 0.317139 6.41437C0.317139 9.95109 3.19494 12.8287 6.73185 12.8287ZM6.73185 1.60359C9.38513 1.60359 11.5429 3.76123 11.5429 6.41437C11.5429 9.06751 9.38513 11.2251 6.73185 11.2251C4.07856 11.2251 1.92082 9.06751 1.92082 6.41437C1.92082 3.76123 4.07856 1.60359 6.73185 1.60359Z"
+                      fill="#757575"
+                    />
+                  </svg>
+                </div>
+                <label for="city">location</label>
+                <input
+                  type="text"
+                  class="search-bar__input"
+                  placeholder="Singapore, Singapore"
+                  name="city"
+                  id="city"
+                />
+              </div>
+            </div>
+            <div class="search-bar__group search-bar__group--md">
+              <div class="search-bar__wrapper">
+                <div class="search-bar__icon">
+                  <svg
+                    width="17"
+                    height="15"
+                    viewBox="0 0 17 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 1.35H12.5V0.15C12.5 0.0675 12.425 0 12.3333 0H11.1667C11.075 0 11 0.0675 11 0.15V1.35H5.66667V0.15C5.66667 0.0675 5.59167 0 5.5 0H4.33333C4.24167 0 4.16667 0.0675 4.16667 0.15V1.35H0.666667C0.297917 1.35 0 1.61813 0 1.95V14.4C0 14.7319 0.297917 15 0.666667 15H16C16.3687 15 16.6667 14.7319 16.6667 14.4V1.95C16.6667 1.61813 16.3687 1.35 16 1.35ZM15.1667 13.65H1.5V6.525H15.1667V13.65ZM1.5 5.25V2.7H4.16667V3.6C4.16667 3.6825 4.24167 3.75 4.33333 3.75H5.5C5.59167 3.75 5.66667 3.6825 5.66667 3.6V2.7H11V3.6C11 3.6825 11.075 3.75 11.1667 3.75H12.3333C12.425 3.75 12.5 3.6825 12.5 3.6V2.7H15.1667V5.25H1.5Z"
+                      fill="#757575"
+                    />
+                  </svg>
+                </div>
+                <label for="date">date</label>
+                <input
+                  type="text"
+                  class="search-bar__input"
+                  placeholder="Jul 19  –  Jul 20"
+                  name="date"
+                  id="date"
+                />
+              </div>
+            </div>
+            <div class="search-bar__group search-bar__group--md">
+              <div class="search-bar__wrapper search-bar__wrapper--guest">
+                <label for="guest">guest</label>
+                <input
+                  type="text"
+                  class="search-bar__input"
+                  placeholder="2 adults, 0 children, 1 room"
+                  name="guest"
+                  id="guest"
+                />
+              </div>
+            </div>
+            <div class="search-bar__group search-bar__group--sm">
+              <button class="search-bar__button" type="submit">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="section-search-page">
+      <div class="container">
+        <div class="search-page">
+          <div class="search-page__sidebar">
+            <div class="search-page__map">
+              <div class="search-page__map-image-box">
+                <img
+                  src="./assets/images/map.png"
+                  alt="map"
+                  class="search-page__map-image"
+                />
+              </div>
+              <div class="search-page__overlay">
+                <button class="search-page__map-button">Show Map</button>
+              </div>
+            </div>
+            <div class="search-page__price-box">
+              <div class="search-page__header">
+                <h1 class="search-page__heading">Price per night</h1>
+                <button class="search-page__clear">Clear</button>
+              </div>
+              <div class="search-page__price-slide">&nbsp;</div>
+              <div class="search-page__price-box-footer">
+                <input
+                  type="text"
+                  class="search-page__price-input"
+                  placeholder="SGD  0"
+                />
+                <span class="divider">&nbsp;</span>
+                <input
+                  type="text"
+                  class="search-page__price-input"
+                  placeholder="SGD  550"
+                />
+              </div>
+            </div>
+            <div class="search-page__review-box">
+              <div class="search-page__header">
+                <h1 class="search-page__heading">Reviews</h1>
+                <button class="search-page__clear">Clear</button>
+              </div>
+              <ul class="reviews__list">
+                <li class="reviews__item">
+                  <div class="reviews__check">
+                    <input
+                      type="checkbox"
+                      class="reviews__checkbox"
+                      id="checkbox"
+                      name="review"
+                    />
+                    <span class="reviews__checkmark">
+                      <svg
+                        width="11"
+                        height="8"
+                        viewBox="0 0 11 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <label for="checkbox" class="reviews__label">
+                    Excellent
+                  </label>
+                  <p class="reviews__value">999</p>
+                </li>
+                <li class="reviews__item">
+                  <div class="reviews__check">
+                    <input
+                      type="checkbox"
+                      class="reviews__checkbox"
+                      id="checkbox"
+                      name="review"
+                    />
+                    <span class="reviews__checkmark">
+                      <svg
+                        width="11"
+                        height="8"
+                        viewBox="0 0 11 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <label for="checkbox" class="reviews__label">
+                    Very Good
+                  </label>
+                  <p class="reviews__value">999</p>
+                </li>
+                <li class="reviews__item">
+                  <div class="reviews__check">
+                    <input
+                      type="checkbox"
+                      class="reviews__checkbox"
+                      id="checkbox"
+                      name="review"
+                    />
+                    <span class="reviews__checkmark">
+                      <svg
+                        width="11"
+                        height="8"
+                        viewBox="0 0 11 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <label for="checkbox" class="reviews__label"> Good </label>
+                  <p class="reviews__value">999</p>
+                </li>
+                <li class="reviews__item">
+                  <div class="reviews__check">
+                    <input
+                      type="checkbox"
+                      class="reviews__checkbox"
+                      id="checkbox"
+                      name="review"
+                    />
+                    <span class="reviews__checkmark">
+                      <svg
+                        width="11"
+                        height="8"
+                        viewBox="0 0 11 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <label for="checkbox" class="reviews__label"> Fair </label>
+                  <p class="reviews__value">999</p>
+                </li>
+                <li class="reviews__item">
+                  <div class="reviews__check">
+                    <input
+                      type="checkbox"
+                      class="reviews__checkbox"
+                      id="checkbox"
+                      name="review"
+                    />
+                    <span class="reviews__checkmark">
+                      <svg
+                        width="11"
+                        height="8"
+                        viewBox="0 0 11 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <label for="checkbox" class="reviews__label"> Poor </label>
+                  <p class="reviews__value">999</p>
+                </li>
+                <li class="reviews__item">
+                  <div class="reviews__check">
+                    <input
+                      type="checkbox"
+                      class="reviews__checkbox"
+                      id="checkbox"
+                      name="review"
+                    />
+                    <span class="reviews__checkmark">
+                      <svg
+                        width="11"
+                        height="8"
+                        viewBox="0 0 11 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <label for="checkbox" class="reviews__label">
+                    No review
+                  </label>
+                  <p class="reviews__value">999</p>
+                </li>
+              </ul>
+            </div>
+            <div class="search-page__star-box">
+              <div class="search-page__header">
+                <h1 class="search-page__heading">Star rating</h1>
+                <button class="search-page__clear">Clear</button>
+              </div>
+              <ul class="stars__list">
+                <li class="stars__item">
+                  <div class="stars__check">
+                    <input
+                      type="checkbox"
+                      class="stars__checkbox"
+                      id="checkbox"
+                      name="star"
+                    />
+                    <span class="stars__checkmark">
+                      <svg
+                        width="11"
+                        height="8"
+                        viewBox="0 0 11 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="stars__icon">
+                    <svg
+                      width="15"
+                      height="14"
+                      viewBox="0 0 15 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.75 0L9.43386 5.18237H14.8829L10.4745 8.38525L12.1584 13.5676L7.75 10.3647L3.34161 13.5676L5.02547 8.38525L0.617076 5.18237H6.06614L7.75 0Z"
+                        fill="#E9BF2D"
+                      />
+                    </svg>
+                    <svg
+                      width="15"
+                      height="14"
+                      viewBox="0 0 15 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.75 0L9.43386 5.18237H14.8829L10.4745 8.38525L12.1584 13.5676L7.75 10.3647L3.34161 13.5676L5.02547 8.38525L0.617076 5.18237H6.06614L7.75 0Z"
+                        fill="#E9BF2D"
+                      />
+                    </svg>
+
+                    <svg
+                      width="15"
+                      height="14"
+                      viewBox="0 0 15 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.75 0L9.43386 5.18237H14.8829L10.4745 8.38525L12.1584 13.5676L7.75 10.3647L3.34161 13.5676L5.02547 8.38525L0.617076 5.18237H6.06614L7.75 0Z"
+                        fill="#E9BF2D"
+                      />
+                    </svg>
+
+                    <svg
+                      width="15"
+                      height="14"
+                      viewBox="0 0 15 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.75 0L9.43386 5.18237H14.8829L10.4745 8.38525L12.1584 13.5676L7.75 10.3647L3.34161 13.5676L5.02547 8.38525L0.617076 5.18237H6.06614L7.75 0Z"
+                        fill="#E9BF2D"
+                      />
+                    </svg>
+                    <svg
+                      width="15"
+                      height="14"
+                      viewBox="0 0 15 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.75 0L9.43386 5.18237H14.8829L10.4745 8.38525L12.1584 13.5676L7.75 10.3647L3.34161 13.5676L5.02547 8.38525L0.617076 5.18237H6.06614L7.75 0Z"
+                        fill="#E9BF2D"
+                      />
+                    </svg>
+                  </div>
+                  <p class="stars__value">999</p>
+                </li>
+                <li class="stars__item">
+                  <div class="stars__check">
+                    <input
+                      type="checkbox"
+                      class="stars__checkbox"
+                      id="checkbox"
+                      name="star"
+                    />
+                    <span class="stars__checkmark">
+                      <svg
+                        width="11"
+                        height="8"
+                        viewBox="0 0 11 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="stars__icon">
+                    <svg
+                      width="15"
+                      height="14"
+                      viewBox="0 0 15 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.75 0L9.43386 5.18237H14.8829L10.4745 8.38525L12.1584 13.5676L7.75 10.3647L3.34161 13.5676L5.02547 8.38525L0.617076 5.18237H6.06614L7.75 0Z"
+                        fill="#E9BF2D"
+                      />
+                    </svg>
+                    <svg
+                      width="15"
+                      height="14"
+                      viewBox="0 0 15 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.75 0L9.43386 5.18237H14.8829L10.4745 8.38525L12.1584 13.5676L7.75 10.3647L3.34161 13.5676L5.02547 8.38525L0.617076 5.18237H6.06614L7.75 0Z"
+                        fill="#E9BF2D"
+                      />
+                    </svg>
+
+                    <svg
+                      width="15"
+                      height="14"
+                      viewBox="0 0 15 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.75 0L9.43386 5.18237H14.8829L10.4745 8.38525L12.1584 13.5676L7.75 10.3647L3.34161 13.5676L5.02547 8.38525L0.617076 5.18237H6.06614L7.75 0Z"
+                        fill="#E9BF2D"
+                      />
+                    </svg>
+
+                    <svg
+                      width="15"
+                      height="14"
+                      viewBox="0 0 15 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.75 0L9.43386 5.18237H14.8829L10.4745 8.38525L12.1584 13.5676L7.75 10.3647L3.34161 13.5676L5.02547 8.38525L0.617076 5.18237H6.06614L7.75 0Z"
+                        fill="#E9BF2D"
+                      />
+                    </svg>
+                  </div>
+                  <p class="stars__value">999</p>
+                </li>
+                <li class="stars__item">
+                  <div class="stars__check">
+                    <input
+                      type="checkbox"
+                      class="stars__checkbox"
+                      id="checkbox"
+                      name="star"
+                    />
+                    <span class="stars__checkmark">
+                      <svg
+                        width="11"
+                        height="8"
+                        viewBox="0 0 11 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="stars__icon">
+                    <svg
+                      width="15"
+                      height="14"
+                      viewBox="0 0 15 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.75 0L9.43386 5.18237H14.8829L10.4745 8.38525L12.1584 13.5676L7.75 10.3647L3.34161 13.5676L5.02547 8.38525L0.617076 5.18237H6.06614L7.75 0Z"
+                        fill="#E9BF2D"
+                      />
+                    </svg>
+                    <svg
+                      width="15"
+                      height="14"
+                      viewBox="0 0 15 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.75 0L9.43386 5.18237H14.8829L10.4745 8.38525L12.1584 13.5676L7.75 10.3647L3.34161 13.5676L5.02547 8.38525L0.617076 5.18237H6.06614L7.75 0Z"
+                        fill="#E9BF2D"
+                      />
+                    </svg>
+
+                    <svg
+                      width="15"
+                      height="14"
+                      viewBox="0 0 15 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.75 0L9.43386 5.18237H14.8829L10.4745 8.38525L12.1584 13.5676L7.75 10.3647L3.34161 13.5676L5.02547 8.38525L0.617076 5.18237H6.06614L7.75 0Z"
+                        fill="#E9BF2D"
+                      />
+                    </svg>
+                  </div>
+                  <p class="stars__value">999</p>
+                </li>
+                <li class="stars__item">
+                  <div class="stars__check">
+                    <input
+                      type="checkbox"
+                      class="stars__checkbox"
+                      id="checkbox"
+                      name="star"
+                    />
+                    <span class="stars__checkmark">
+                      <svg
+                        width="11"
+                        height="8"
+                        viewBox="0 0 11 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="stars__icon">
+                    <svg
+                      width="15"
+                      height="14"
+                      viewBox="0 0 15 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.75 0L9.43386 5.18237H14.8829L10.4745 8.38525L12.1584 13.5676L7.75 10.3647L3.34161 13.5676L5.02547 8.38525L0.617076 5.18237H6.06614L7.75 0Z"
+                        fill="#E9BF2D"
+                      />
+                    </svg>
+                    <svg
+                      width="15"
+                      height="14"
+                      viewBox="0 0 15 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.75 0L9.43386 5.18237H14.8829L10.4745 8.38525L12.1584 13.5676L7.75 10.3647L3.34161 13.5676L5.02547 8.38525L0.617076 5.18237H6.06614L7.75 0Z"
+                        fill="#E9BF2D"
+                      />
+                    </svg>
+                  </div>
+                  <p class="stars__value">999</p>
+                </li>
+                <li class="stars__item">
+                  <div class="stars__check">
+                    <input
+                      type="checkbox"
+                      class="stars__checkbox"
+                      id="checkbox"
+                      name="star"
+                    />
+                    <span class="stars__checkmark">
+                      <svg
+                        width="11"
+                        height="8"
+                        viewBox="0 0 11 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="stars__icon">
+                    <svg
+                      width="15"
+                      height="14"
+                      viewBox="0 0 15 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.75 0L9.43386 5.18237H14.8829L10.4745 8.38525L12.1584 13.5676L7.75 10.3647L3.34161 13.5676L5.02547 8.38525L0.617076 5.18237H6.06614L7.75 0Z"
+                        fill="#E9BF2D"
+                      />
+                    </svg>
+                  </div>
+                  <p class="stars__value">999</p>
+                </li>
+                <li class="stars__item">
+                  <div class="stars__check">
+                    <input
+                      type="checkbox"
+                      class="stars__checkbox"
+                      id="checkbox"
+                      name="star"
+                    />
+                    <span class="stars__checkmark">
+                      <svg
+                        width="11"
+                        height="8"
+                        viewBox="0 0 11 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="stars__icon">No rating</div>
+                  <p class="stars__value">999</p>
+                </li>
+              </ul>
+            </div>
+            <div class="search-page__hotel-box">
+              <h1 class="search-page__heading">Hotel name</h1>
+              <div class="search-page__hotel-group">
+                <div class="search-page__hotel-wrapper">
+                  <input
+                    type="text"
+                    class="search-page__hotel-input"
+                    placeholder="e.g. Hilton, Ibis ..."
+                    name="hotel-name"
+                  />
+                  <button class="search-page__hotel-button">
+                    <svg
+                      width="16"
+                      height="15"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.73185 12.8287C8.1551 12.8284 9.53733 12.352 10.6585 11.4753L14.1833 15L15.3171 13.8663L11.7923 10.3416C12.6695 9.22038 13.1462 7.83791 13.1466 6.41437C13.1466 2.87765 10.2688 0 6.73185 0C3.19494 0 0.317139 2.87765 0.317139 6.41437C0.317139 9.95109 3.19494 12.8287 6.73185 12.8287ZM6.73185 1.60359C9.38513 1.60359 11.5429 3.76123 11.5429 6.41437C11.5429 9.06751 9.38513 11.2251 6.73185 11.2251C4.07856 11.2251 1.92082 9.06751 1.92082 6.41437C1.92082 3.76123 4.07856 1.60359 6.73185 1.60359Z"
+                        fill="#757575"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="search-page__reservation-box">
+              <div class="search-page__header">
+                <h1 class="search-page__heading">Reservation policy</h1>
+              </div>
+              <ul class="reservation__list">
+                <li class="reservation__item">
+                  <div class="reservation__check">
+                    <input
+                      type="checkbox"
+                      class="reservation__checkbox"
+                      id="reservation"
+                      name="reservation"
+                    />
+                    <span class="reservation__checkmark">
+                      <svg
+                        width="11"
+                        height="8"
+                        viewBox="0 0 11 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <label for="reservation" class="reservation__label">
+                    Free cancellation
+                  </label>
+                  <p class="reservation__value">999</p>
+                </li>
+                <li class="reservation__item">
+                  <div class="reservation__check">
+                    <input
+                      type="checkbox"
+                      class="reservation__checkbox"
+                      id="reservation"
+                      name="reservation"
+                    />
+                    <span class="reservation__checkmark">
+                      <svg
+                        width="11"
+                        height="8"
+                        viewBox="0 0 11 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <label for="reservation" class="reservation__label">
+                    Book now, pay later
+                  </label>
+                  <p class="reservation__value">999</p>
+                </li>
+                <li class="reservation__item">
+                  <div class="reservation__check">
+                    <input
+                      type="checkbox"
+                      class="reservation__checkbox"
+                      id="reservation"
+                      name="reservation"
+                    />
+                    <span class="reservation__checkmark">
+                      <svg
+                        width="11"
+                        height="8"
+                        viewBox="0 0 11 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <label for="reservation" class="reservation__label">
+                    Pay at hotel
+                  </label>
+                  <p class="reservation__value">999</p>
+                </li>
+              </ul>
+            </div>
+            <div class="search-page__meal-box">
+              <div class="search-page__header">
+                <h1 class="search-page__heading">Meal plan</h1>
+              </div>
+              <ul class="meal__list">
+                <li class="meal__item">
+                  <div class="meal__check">
+                    <input
+                      type="checkbox"
+                      class="meal__checkbox"
+                      id="meal"
+                      name="meal"
+                    />
+                    <span class="meal__checkmark">
+                      <svg
+                        width="11"
+                        height="8"
+                        viewBox="0 0 11 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <label for="meal" class="meal__label"> Room only </label>
+                  <p class="meal__value">999</p>
+                </li>
+                <li class="meal__item">
+                  <div class="meal__check">
+                    <input
+                      type="checkbox"
+                      class="meal__checkbox"
+                      id="meal"
+                      name="meal"
+                    />
+                    <span class="meal__checkmark">
+                      <svg
+                        width="11"
+                        height="8"
+                        viewBox="0 0 11 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <label for="meal" class="meal__label"> Breakfast </label>
+                  <p class="meal__value">999</p>
+                </li>
+                <button class="show-more">
+                  <span class="text"> Show 5 more </span>
+                  <span class="icon">
+                    <svg
+                      width="7"
+                      height="4"
+                      viewBox="0 0 7 4"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0 0L3.2 4L6.4 0H0Z" fill="#002D63" />
+                    </svg>
+                  </span>
+                </button>
+                <ul class="meal__list meal__list--hidden meal__list--extended">
+                  <li class="meal__item">
+                    <div class="meal__check">
+                      <input
+                        type="checkbox"
+                        class="meal__checkbox"
+                        id="meal"
+                        name="meal"
+                      />
+                      <span class="meal__checkmark">
+                        <svg
+                          width="11"
+                          height="8"
+                          viewBox="0 0 11 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <label for="meal" class="meal__label"> Lunch </label>
+                    <p class="meal__value">999</p>
+                  </li>
+                  <li class="meal__item">
+                    <div class="meal__check">
+                      <input
+                        type="checkbox"
+                        class="meal__checkbox"
+                        id="meal"
+                        name="meal"
+                      />
+                      <span class="meal__checkmark">
+                        <svg
+                          width="11"
+                          height="8"
+                          viewBox="0 0 11 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <label for="meal" class="meal__label"> Dinner </label>
+                    <p class="meal__value">999</p>
+                  </li>
+                  <li class="meal__item">
+                    <div class="meal__check">
+                      <input
+                        type="checkbox"
+                        class="meal__checkbox"
+                        id="meal"
+                        name="meal"
+                      />
+                      <span class="meal__checkmark">
+                        <svg
+                          width="11"
+                          height="8"
+                          viewBox="0 0 11 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <label for="meal" class="meal__label"> Half board </label>
+                    <p class="meal__value">999</p>
+                  </li>
+                  <li class="meal__item">
+                    <div class="meal__check">
+                      <input
+                        type="checkbox"
+                        class="meal__checkbox"
+                        id="meal"
+                        name="meal"
+                      />
+                      <span class="meal__checkmark">
+                        <svg
+                          width="11"
+                          height="8"
+                          viewBox="0 0 11 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <label for="meal" class="meal__label"> Full board </label>
+                    <p class="meal__value">999</p>
+                  </li>
+                  <li class="meal__item">
+                    <div class="meal__check">
+                      <input
+                        type="checkbox"
+                        class="meal__checkbox"
+                        id="meal"
+                        name="meal"
+                      />
+                      <span class="meal__checkmark">
+                        <svg
+                          width="11"
+                          height="8"
+                          viewBox="0 0 11 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <label for="meal" class="meal__label">
+                      All inclusive
+                    </label>
+                    <p class="meal__value">999</p>
+                  </li>
+                  <button class="show-less">
+                    <span class="text"> Show less </span>
+                    <span class="icon">
+                      <svg
+                        width="7"
+                        height="4"
+                        viewBox="0 0 7 4"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M0 4L3.2 0L6.4 4H0Z" fill="#002D63" />
+                      </svg>
+                    </span>
+                  </button>
+                </ul>
+              </ul>
+            </div>
+            <div class="search-page__property-box">
+              <div class="search-page__header">
+                <h1 class="search-page__heading">Property type</h1>
+              </div>
+              <ul class="property__list">
+                <li class="property__item">
+                  <div class="property__check">
+                    <input
+                      type="checkbox"
+                      class="property__checkbox"
+                      id="property"
+                      name="property"
+                    />
+                    <span class="property__checkmark">
+                      <svg
+                        width="11"
+                        height="8"
+                        viewBox="0 0 11 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <label for="property" class="property__label"> Hotel </label>
+                  <p class="property__value">999</p>
+                </li>
+                <li class="property__item">
+                  <div class="property__check">
+                    <input
+                      type="checkbox"
+                      class="property__checkbox"
+                      id="property"
+                      name="property"
+                    />
+                    <span class="property__checkmark">
+                      <svg
+                        width="11"
+                        height="8"
+                        viewBox="0 0 11 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <label for="property" class="property__label">
+                    Hostel/Backpacker accomodation
+                  </label>
+                  <p class="property__value">999</p>
+                </li>
+                <li class="property__item">
+                  <div class="property__check">
+                    <input
+                      type="checkbox"
+                      class="property__checkbox"
+                      id="property"
+                      name="property"
+                    />
+                    <span class="property__checkmark">
+                      <svg
+                        width="11"
+                        height="8"
+                        viewBox="0 0 11 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <label for="property" class="property__label">
+                    Apartment
+                  </label>
+                  <p class="property__value">999</p>
+                </li>
+                <button class="show-more">
+                  <span class="text"> Show 9 more </span>
+                  <span class="icon">
+                    <svg
+                      width="7"
+                      height="4"
+                      viewBox="0 0 7 4"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0 0L3.2 4L6.4 0H0Z" fill="#002D63" />
+                    </svg>
+                  </span>
+                </button>
+                <ul
+                  class="property__list property__list--hidden property__list--extended"
+                >
+                  <li class="property__item">
+                    <div class="property__check">
+                      <input
+                        type="checkbox"
+                        class="property__checkbox"
+                        id="property"
+                        name="property"
+                      />
+                      <span class="property__checkmark">
+                        <svg
+                          width="11"
+                          height="8"
+                          viewBox="0 0 11 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <label for="property" class="property__label">
+                      Aparthotel
+                    </label>
+                    <p class="property__value">999</p>
+                  </li>
+                  <li class="property__item">
+                    <div class="property__check">
+                      <input
+                        type="checkbox"
+                        class="property__checkbox"
+                        id="property"
+                        name="property"
+                      />
+                      <span class="property__checkmark">
+                        <svg
+                          width="11"
+                          height="8"
+                          viewBox="0 0 11 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <label for="property" class="property__label">
+                      Resort
+                    </label>
+                    <p class="property__value">999</p>
+                  </li>
+                  <li class="property__item">
+                    <div class="property__check">
+                      <input
+                        type="checkbox"
+                        class="property__checkbox"
+                        id="property"
+                        name="property"
+                      />
+                      <span class="property__checkmark">
+                        <svg
+                          width="11"
+                          height="8"
+                          viewBox="0 0 11 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <label for="property" class="property__label"> Inn </label>
+                    <p class="property__value">999</p>
+                  </li>
+                  <li class="property__item">
+                    <div class="property__check">
+                      <input
+                        type="checkbox"
+                        class="property__checkbox"
+                        id="property"
+                        name="property"
+                      />
+                      <span class="property__checkmark">
+                        <svg
+                          width="11"
+                          height="8"
+                          viewBox="0 0 11 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <label for="property" class="property__label">
+                      Motel
+                    </label>
+                    <p class="property__value">999</p>
+                  </li>
+                  <li class="property__item">
+                    <div class="property__check">
+                      <input
+                        type="checkbox"
+                        class="property__checkbox"
+                        id="property"
+                        name="property"
+                      />
+                      <span class="property__checkmark">
+                        <svg
+                          width="11"
+                          height="8"
+                          viewBox="0 0 11 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <label for="property" class="property__label">
+                      Bed & breakfast
+                    </label>
+                    <p class="property__value">999</p>
+                  </li>
+                  <li class="property__item">
+                    <div class="property__check">
+                      <input
+                        type="checkbox"
+                        class="property__checkbox"
+                        id="property"
+                        name="property"
+                      />
+                      <span class="property__checkmark">
+                        <svg
+                          width="11"
+                          height="8"
+                          viewBox="0 0 11 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <label for="property" class="property__label">
+                      Guesthouse
+                    </label>
+                    <p class="property__value">999</p>
+                  </li>
+                  <li class="property__item">
+                    <div class="property__check">
+                      <input
+                        type="checkbox"
+                        class="property__checkbox"
+                        id="property"
+                        name="property"
+                      />
+                      <span class="property__checkmark">
+                        <svg
+                          width="11"
+                          height="8"
+                          viewBox="0 0 11 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <label for="property" class="property__label">
+                      Condo
+                    </label>
+                    <p class="property__value">999</p>
+                  </li>
+                  <li class="property__item">
+                    <div class="property__check">
+                      <input
+                        type="checkbox"
+                        class="property__checkbox"
+                        id="property"
+                        name="property"
+                      />
+                      <span class="property__checkmark">
+                        <svg
+                          width="11"
+                          height="8"
+                          viewBox="0 0 11 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <label for="property" class="property__label">
+                      All-inclusive property
+                    </label>
+                    <p class="property__value">999</p>
+                  </li>
+                  <li class="property__item">
+                    <div class="property__check">
+                      <input
+                        type="checkbox"
+                        class="property__checkbox"
+                        id="property"
+                        name="property"
+                      />
+                      <span class="property__checkmark">
+                        <svg
+                          width="11"
+                          height="8"
+                          viewBox="0 0 11 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M1.33333 2.66667L0 4L4 8L10.6667 1.33333L9.33333 0L4 5.33333L1.33333 2.66667Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <label for="property" class="property__label">
+                      Hostal
+                    </label>
+                    <p class="property__value">999</p>
+                  </li>
+                  <button class="show-less">
+                    <span class="text"> Show less </span>
+                    <span class="icon">
+                      <svg
+                        width="7"
+                        height="4"
+                        viewBox="0 0 7 4"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M0 4L3.2 0L6.4 4H0Z" fill="#002D63" />
+                      </svg>
+                    </span>
+                  </button>
+                </ul>
+              </ul>
+            </div>
+          </div>
+          <div class="search-page__view">&nbsp;</div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/home.js"></script>
+  </body>
+</html>
