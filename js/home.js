@@ -25,3 +25,27 @@ showLessButton2.addEventListener("click", function (e) {
   extendedList2.classList.add("property__list--hidden");
   showMoreButton2.style.display = "flex";
 });
+
+const sectionBody = document.querySelector(".header");
+const searchBox = document.querySelector(".section-search-bar");
+
+const headerHeight = searchBox.getBoundingClientRect().height;
+console.log(headerHeight);
+
+const stickyNav = function (entries) {
+  const [entry] = entries;
+  console.log(entry);
+  if (!entry.isIntersecting) {
+    searchBox.classList.add("fixed");
+  } else {
+    searchBox.classList.remove("fixed");
+  }
+};
+
+const headerObserver = new IntersectionObserver(stickyNav, {
+  root: null,
+  threshold: 0.5,
+  rootMargin: `${headerHeight}px`,
+});
+
+headerObserver.observe(sectionBody);

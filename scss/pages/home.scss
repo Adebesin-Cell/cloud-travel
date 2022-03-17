@@ -16,6 +16,14 @@
   display: flex;
   align-items: center;
 
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 5;
+  }
+
   .container {
     flex: 0 0 100%;
   }
@@ -316,6 +324,12 @@
   }
 
   &__property-box {
+    padding: calc(var(--span-xs) + 5px) var(--span-s);
+    background: #ffffff;
+    border-radius: 5px;
+  }
+
+  &__facility-box {
     padding: calc(var(--span-xs) + 5px) var(--span-s);
     background: #ffffff;
     border-radius: 5px;
@@ -766,5 +780,19 @@
     text-align: left;
     cursor: pointer;
     color: #002d63;
+  }
+}
+
+.view {
+  &__heading {
+    font-family: var(--Mulish);
+    font-size: var(--size-m);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+    margin-bottom: calc(var(--span-xs) + 5px);
   }
 }
