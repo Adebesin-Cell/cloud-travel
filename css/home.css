@@ -1074,4 +1074,58 @@ body {
   color: #000000;
   margin-bottom: calc(var(--span-xs) + 5px);
 }
+
+.view__filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.view__filter {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+}
+
+.view__filter:not(:last-child) {
+  border-right: 1px solid #dddddd;
+}
+
+.view__filter button {
+  background: #ffffff;
+  outline: none;
+  border: none;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  padding: calc(var(--span-xs) + 2px) var(--span-xl);
+  font-family: var(--Mulish);
+  font-size: var(--size-s);
+  font-style: normal;
+  font-weight: var(--weight-sm);
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.view__filter button.first-child {
+  border-radius: 5px 0px 0px 5px;
+}
+
+.view__filter button.last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.view__filter button.active {
+  background: #002d63;
+  color: #fff;
+}
 /*# sourceMappingURL=home.css.map */
