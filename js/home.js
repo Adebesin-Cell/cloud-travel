@@ -50,9 +50,12 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 
 headerObserver.observe(sectionBody);
 
-const btnScrollTo = document.querySelector(".scroll-to-top");
+const btnScrollTo = Array.from(document.querySelectorAll(".scroll-to-top"));
 const header = document.querySelector(".header");
 
-btnScrollTo.addEventListener("click", function (e) {
-  header.scrollIntoView({ behavior: "smooth" });
+btnScrollTo.forEach((btn) => {
+  btn.addEventListener("click", function (e) {
+    console.log("hello");
+    header.scrollIntoView({ behavior: "smooth" });
+  });
 });

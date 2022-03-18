@@ -38,7 +38,10 @@
     display: none;
 
     @media only screen and (max-width: 1140px) {
-      display: block;
+      align-self: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 
@@ -47,10 +50,17 @@
     outline: none;
     border: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
 .nav {
+  @media only screen and (max-width: 1140px) {
+    display: none;
+  }
+
   &__list {
     display: flex;
     align-items: center;
