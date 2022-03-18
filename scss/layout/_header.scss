@@ -5,6 +5,10 @@
   border-bottom: 1px solid var(--border);
   background: #ffffff;
 
+  @media only screen and (max-width: 1140px) {
+    border-bottom: none;
+  }
+
   &__logo {
     height: 35px;
   }
@@ -13,6 +17,7 @@
     display: inline-block;
     text-decoration: none;
     width: 100%;
+    height: 35px;
   }
 
   &__logo {
@@ -28,6 +33,21 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  &__icon {
+    display: none;
+
+    @media only screen and (max-width: 1140px) {
+      display: block;
+    }
+  }
+
+  &__button {
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
 }
 
 .nav {
@@ -36,6 +56,10 @@
     align-items: center;
     gap: var(--span-m);
     list-style-type: none;
+
+    @media only screen and (max-width: 1140px) {
+      display: none;
+    }
   }
 
   &__link {
