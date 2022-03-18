@@ -12,6 +12,12 @@
   overflow: hidden;
   direction: ltr;
   border-radius: 2px;
+
+  @media only screen and (max-width: 1140px) {
+    margin-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .ph-item,
@@ -41,6 +47,7 @@
   content: " ";
   pointer-events: none;
 }
+
 .ph-item > * {
   display: flex;
   flex: 1 1 auto;
@@ -48,6 +55,12 @@
   margin-bottom: 15px;
   padding-right: 15px;
   padding-left: 15px;
+
+  @media only screen and (max-width: 1140px) {
+    margin-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .ph-row {

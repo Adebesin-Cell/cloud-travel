@@ -640,6 +640,10 @@
     list-style-type: none;
     display: grid;
     gap: 10px;
+
+    &--hidden {
+      display: none;
+    }
   }
 
   &__item {

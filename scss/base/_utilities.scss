@@ -12,6 +12,11 @@
 .u-picture-sm {
   width: 200px;
   height: 200px;
+
+  @media only screen and (max-width: 600px) {
+    width: 100px;
+    height: 150px;
+  }
 }
 
 .u-loading-hidden {
