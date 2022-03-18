@@ -49,3 +49,10 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 });
 
 headerObserver.observe(sectionBody);
+
+const btnScrollTo = document.querySelector(".scroll-to-top");
+const header = document.querySelector(".header");
+
+btnScrollTo.addEventListener("click", function (e) {
+  header.scrollIntoView({ behavior: "smooth" });
+});
