@@ -975,7 +975,10 @@ body {
 
 @media only screen and (max-width: 600px) {
   .mobile-search__footer .pagination__list {
-    margin: 0 auto;
+    margin: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
