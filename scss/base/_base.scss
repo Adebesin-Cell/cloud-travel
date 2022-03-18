@@ -15,4 +15,8 @@ html {
 body {
   font-family: var(--Mulish);
   background: #f5f5f5;
+
+  &.no-scroll {
+    overflow-y: hidden;
+  }
 }
