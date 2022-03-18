@@ -569,12 +569,12 @@
     justify-content: space-between;
     align-items: center;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 768px) {
       padding: var(--span-s) var(--span-xs);
     }
 
     p {
-      margin-left: var(--span-xs);
+      margin-left: var(--span-s);
     }
   }
 
@@ -587,10 +587,20 @@
       padding-right: 30px;
     }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 768px) {
       flex-direction: column;
       padding-right: 15px;
       padding-left: 15px;
+    }
+
+    .pagination__list {
+      @media only screen and (max-width: 768px) {
+        margin: 0 auto;
+      }
+
+      @media only screen and (max-width: 600px) {
+        margin: 0;
+      }
     }
   }
 
