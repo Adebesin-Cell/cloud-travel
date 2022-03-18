@@ -2,6 +2,7 @@
 @import "../abstracts/mixins";
 
 @import "../base/base";
+@import "../base/animation";
 @import "../base/typography";
 @import "../base/utilities";
 
@@ -312,6 +313,7 @@
   &__view {
     flex-grow: 1;
     flex-shrink: 0;
+    position: relative;
   }
 
   &__map {

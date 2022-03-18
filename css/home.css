@@ -48,6 +48,208 @@ body {
   background: #f5f5f5;
 }
 
+/**
+ * placeholder-loading v0.5.0
+ * Author: Zalog (https://www.zalog.ro/)
+ * License: MIT
+ **/
+.ph-item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 30px;
+  padding: 30px 15px 15px 15px;
+  overflow: hidden;
+  direction: ltr;
+  border-radius: 2px;
+}
+
+.ph-item,
+.ph-item *,
+.ph-item ::after,
+.ph-item ::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.ph-item::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  z-index: 1;
+  width: 500%;
+  margin-left: -250%;
+  background: -webkit-gradient(linear, left top, right top, color-stop(46%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0.35)), color-stop(54%, rgba(255, 255, 255, 0))) 50% 50%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 46%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0) 54%) 50% 50%;
+  -webkit-animation: phAnimation 0.8s linear infinite;
+  animation: phAnimation 0.8s linear infinite;
+  content: " ";
+  pointer-events: none;
+}
+
+.ph-item > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.ph-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: -7.5px;
+}
+
+.ph-row div {
+  height: 10px;
+  margin-top: 5.5px;
+  background-color: #ced4da;
+}
+
+.ph-row .big,
+.ph-row.big div {
+  height: 20px;
+}
+
+.ph-row .empty, .ph-row .error {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.ph-col-2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 16.6666666667%;
+          flex: 0 0 16.6666666667%;
+}
+
+.ph-col-4 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.3333333333%;
+          flex: 0 0 33.3333333333%;
+}
+
+.ph-col-6 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.ph-col-8 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 66.6666666667%;
+          flex: 0 0 66.6666666667%;
+}
+
+.ph-col-10 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 83.3333333333%;
+          flex: 0 0 83.3333333333%;
+}
+
+.ph-col-12 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+[class*="ph-col"] {
+  direction: ltr;
+}
+
+[class*="ph-col"] > * + .ph-row {
+  margin-top: 0;
+}
+
+[class*="ph-col"] > * + * {
+  margin-top: 7.5px;
+}
+
+.ph-avatar {
+  position: relative;
+  width: 100%;
+  min-width: 60px;
+  overflow: hidden;
+  background-color: #ced4da;
+  border-radius: 50%;
+}
+
+.ph-avatar::before {
+  display: block;
+  padding-top: 100%;
+  content: " ";
+}
+
+.ph-picture {
+  width: 100%;
+  height: 120px;
+  background-color: #ced4da;
+}
+
+@-webkit-keyframes phAnimation {
+  0% {
+    -webkit-transform: translate3d(-30%, 0, 0);
+            transform: translate3d(-30%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(30%, 0, 0);
+            transform: translate3d(30%, 0, 0);
+  }
+}
+
+@keyframes phAnimation {
+  0% {
+    -webkit-transform: translate3d(-30%, 0, 0);
+            transform: translate3d(-30%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(30%, 0, 0);
+            transform: translate3d(30%, 0, 0);
+  }
+}
+
+.u-flex-grow {
+  gap: 0 !important;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.u-flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+}
+
+.u-picture-sm {
+  width: 200px;
+  height: 200px;
+}
+
+.u-loading-hidden {
+  display: none;
+}
+
 @media only screen and (min-width: 1800px) {
   .container {
     padding-left: 15%;
@@ -603,6 +805,7 @@ body {
           flex-grow: 1;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  position: relative;
 }
 
 .search-page__map {
